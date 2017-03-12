@@ -12,6 +12,7 @@
   },
   "author": "",
   "license": "BSD-3-Clause",
+  "private": true,
   "bugs": {
     "url": "https://github.com/adamRenny/CraneTigerCarousel/issues"
   },
