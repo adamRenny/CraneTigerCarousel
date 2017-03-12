@@ -1,3 +1,8 @@
 .step__inactive {
     display: none;
 }
+
+.carousel-image {
+    width: 800px;
+    height: 222px;
+}
