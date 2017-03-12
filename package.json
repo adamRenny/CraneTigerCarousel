@@ -1,0 +1,23 @@
+{
+  "name": "crane-tiger-carousel",
+  "version": "1.0.0",
+  "description": "Simple canvas web tool to transform an image to its ready form for Crane Tiger website",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamRenny/CraneTigerCarousel.git"
+  },
+  "author": "",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/adamRenny/CraneTigerCarousel/issues"
+  },
+  "homepage": "https://github.com/adamRenny/CraneTigerCarousel#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}

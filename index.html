@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <title>Crane Tiger Tai Chi Carousel Image Creator</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-theme.min.css" media="screen" />
+    <link rel="stylesheet" href="/screen.css" media="screen" />
+</head>
+<body>
+    <div class="container">
+        <div id="step-0">
+            <h1>Welcome to your image processing tool! Please wait while it prepares itself...</h1>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                <span class="sr-only">preparing</span>
+              </div>
+            </div>
+        </div>
+
+        <div class="step__inactive" id="step-1">
+            <h1>Step 1: Select an image for your carousel</h1>
+            <form>
+
+                <legend>This tool is used to prepare your images so that they can be used for your carousel. If you process an image here, it will be usable if you then upload it to your Wordpress site later.</legend>
+                <label>Choose your image: <input type="file" id="imageFile" /></label>
+            </form>
+        </div>
+
+        <div class="step__inactive" id="step-2">
+            <h1>Step 2: Is this your image?</h1>
+            <div class="alert alert-warning">
+                <p>If its not, please select another image, and select a new image and try this again!</p>
+            </div>
+            <img src="#" id="srcImage" />
+        </div>
+
+        <div class="step__inactive" id="step-3">
+            <h1>Step 3: Wait for a moment while your image is prepared</h1>
+            <div class="alert alert-info">
+                <p>Your computer may pause for a moment while this processes. Low-fidelity tools these days, I tell ya...</p>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                <span class="sr-only">Processing</span>
+              </div>
+            </div>
+        </div>
+
+        <div class="step__inactive" id="step-4">
+            <h1>Step 4: Here are your images!</h1>
+
+            <div class="well">
+                <h2>Standard Carousel Image</h2>
+                <div class="alert alert-info">
+                    <small>Save as... your filename (.jpg extension)</small>
+                </div>
+                <img src="#" id="destImage" class="carousel-image" />
+
+                <form>
+                <label><input type="checkbox" id="showRetina"> Show retina?</label>
+                </form>
+                <div class="step__inactive" id="step-4-retina">
+                    <h2>Retina Carousel Image</h2>
+                    <div class="alert alert-warning">
+                        <small>Only use this one if you know how to upload a retina image!</small>
+                    </div>
+                    <div class="alert alert-info">
+                        <small>Save as the same as above with @2x.jpg for its extension. So if it were carousel.jpg, this would be carousel@2x.jpg.</small>
+                    </div>
+                    <img src="#" id="destRetina" class="carousel-image carousel-image__retina" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="processor.js"></script>
+</body>
+</html>
